@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-size: bold;
+            text-align: center;
+            font-size: 22px;
+
+         }
+        /*div p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        } */
+        /* for direct p */
+        div > p{
+            color:yellow;
+            font-size: bold;
+            background-color: green;
+
+
+        }
+        div+p{
+            color:white;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <!-- li.item*4+enter -->
+                <li class="item"><p>this is another paragraph inside li</p></li>
+                
+                
+                
+            </ul>
+            <p>this is paragraph</p>
+
+        </div>
+        <p>this is another paragraph</p>
+
+    </div>
+    <p>this is outermost paragraph</p>
+
+    
+</body>
+</html>

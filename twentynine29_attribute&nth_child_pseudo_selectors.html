@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            /* margin: 34px 24px; */
+            display: block;
+            width: 233px;
+            margin: auto;
+            align-items: center;
+        }
+        input{
+            display: block;
+
+        }
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        a[targer]{
+            font-size: 34px;
+            color: violet;
+        }
+
+        /* this will apply css for third child */
+        li:nth-child(3){
+            color:cyan;
+        }
+        li:nth-child(2n+0){
+            color:red;
+        }
+        /* odd child */
+        li:nth-child(odd){
+            background-color: yellow;
+        }
+        /* even child */
+    li:nth-child(even){
+        background-color: blue;
+    }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1><a href="https://google.com" target="_blank" >Go to google</a></h1>
+        <h1><a href="https://facebook.com" target="_blank" >Go to facebook</a></h1>
+        <h1><a href="https://instagram.com" target="_blank" >Go to instagram</a></h1>
+        <!-- target use for new tab open -->
+        <form action="" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="Submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+m  

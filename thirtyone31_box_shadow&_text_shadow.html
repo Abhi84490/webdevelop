@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+
+        }
+        .card{
+            padding: 23px 12px;
+            border: 2px solid red;
+            margin: 23px 13px;
+            background-color: grey;
+
+            /* box shadow (x y color ) */
+            /* for upper use -sign in front of -10px */
+            box-shadow: 10px 13px 15px 14px  green;
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* lower shadow */
+            /* 15px use for blurr radius */
+            /* 14px spread radius */
+            box-shadow: 13px 14px 15px 16px rgba(14, 145, 145, 0.5);
+            /* shadow inside the box */
+            /* multiple shadows */
+            box-shadow:  inset 3px 5px green, 4px 6px red;
+        }
+        /* text shadow */
+        .card h2{
+            text-shadow: 3px 2px 2px  white;
+            /* text-shadow:offset-x offset-y blur-radius color */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is c++ course</h2>
+            <p>I have started c++ sourse which does not mean that we will stop this course. we will continue this course.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates inventore sequi. Molestiae amet dolorem sunt error atque, vel enim. Assumenda, in! Distinctio libero perspiciatis quos sit iure facere aliquid.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, culpa nesciunt autem suscipit vel iure quaerat odit excepturi dolore veritatis, ut nobis enim neque, placeat consequuntur impedit eius! Sequi, unde.</p>
+
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quasi eos laudantium, ipsa consequuntur distinctio harum culpa nihil nesciunt iste ad veritatis id aspernatur a. Magnam saepe dolores maxime error.
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>

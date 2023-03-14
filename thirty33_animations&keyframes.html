@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames and Animations</title>
+    <style>
+        .container {
+            background-color: yellow;
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            /* for moving use relative */
+            position: relative;
+            /* animation start here */
+            animation-name: harry1;
+            animation-name: harry2;
+            animation-duration: 2s;
+            /* animation-iteration-count: 3; */
+            /* for infinite time */
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            /* animation slow or fast
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-out; */
+            animation-timing-function: ease-in-out;
+            animation-delay: 3s;
+            animation-direction: alternate;
+            animation-direction: reverse;
+
+            /* animation short hand properties */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+            animation: harry2 5s ease-in 1s 14 backwards;
+
+
+
+        }@keyframes harry2 {
+            0%{
+                top:0;
+                left:0px ;
+
+            }
+            25%{
+                top:250px;
+                left:0px;
+
+            }
+            /* 50%{
+                top: 250px;
+                left: 250px;
+
+            } */
+            75%{top: 250px;
+                left: 250px;
+
+
+            }
+            100%{top: 0px;
+                left: 250px;
+
+            }
+        }
+
+        @keyframes harry1 {
+            from {
+                width: 200px;
+
+            }
+
+            to {
+                width: 800px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+</body>
+
+</html>
