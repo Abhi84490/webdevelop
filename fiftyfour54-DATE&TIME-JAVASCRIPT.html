@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: aqua;
+            border: 2px solid grey;
+            margin: 4px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        This is a container
+<!-- span#time -->
+        current time is  <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tut.")
+        let now=new Date();
+        console.log(now)
+
+
+        let de=new Date(0);
+        console.log(de)
+
+        let newDate= new Date("2023-03-22");
+        console.log(newDate)
+
+
+
+        // constructor
+        // let newDate= new Date(year, month, date,hours, minutes, seconds, milliseconds);
+        let futureDate= new Date(2029,4,6,9,3,2,34);
+        console.log(futureDate)
+
+        // functions
+        let yr= newDate.getFullYear();
+        console.log("This year is ", yr)
+
+        let dt= newDate.getDate();
+        console.log("This date is ", dt)
+
+
+        let month=newDate.getMonth();
+        console.log("This month is",month)
+
+        newDate.setDate(14);
+        console.log(newDate)
+
+
+        // create watch
+        setInterval(updateTime,1000);
+        function updateTime() {
+            time.innerHTML= new Date;
+        }
+    </script>
+    
+</body>
+</html>
